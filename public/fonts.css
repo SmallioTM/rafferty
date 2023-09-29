@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "PolySans";
+  src: url("/fonts/PolySansNeutral.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Fortesque";
+  src: url("/fonts/FortescueDisplay-Italic.otf") format("opentype");
+}

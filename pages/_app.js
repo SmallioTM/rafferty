@@ -1,16 +1,19 @@
 // pages/_app.js
-import React from "react"; // <-- Import React
+import React from "react";
 import "../src/app/globals.css";
 import Lenis from "@studio-freight/lenis";
 
 function MyApp({ Component, pageProps }) {
   // Initialize Lenis when the component mounts
   React.useEffect(() => {
+    const wrapperElement = document.querySelector(".l-wrapper");
+    const contentElement = document.querySelector(".l-content");
+
     const lenisInstance = new Lenis({
-      wrapper: window, // The element that will be used as the scroll container.
-      content: document.documentElement, // The element that contains the content that will be scrolled.
-      lerp: 0.1, // Linear interpolation (lerp) intensity (between 0 and 1).
-      orientation: "vertical", // The orientation of the scrolling. Can be 'vertical' or 'horizontal'.
+      wrapper: wrapperElement,
+      content: contentElement,
+      lerp: 0.1,
+      orientation: "vertical",
     });
 
     // Make the instance globally available

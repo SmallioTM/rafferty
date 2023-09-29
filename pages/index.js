@@ -5,13 +5,13 @@ import "src/app/globals.css";
 import AboutSection from "@/app/components/AboutSection/AboutSection";
 
 export default function Page() {
-  // No need to re-initialize Lenis here
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
-      <NavBar />
-      <HeroSection />
-      <AboutSection />
+    <main className="l-wrapper flex min-h-screen flex-col items-center justify-between p-24 bg-black">
+      <div className="l-content flex min-h-screen flex-col items-center">
+        <NavBar />
+        <HeroSection />
+        <AboutSection />
+      </div>
     </main>
   );
 }

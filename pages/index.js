@@ -7,8 +7,14 @@ import AboutSection from "@/app/components/AboutSection/AboutSection";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
-      <div className="flex min-h-screen flex-col items-center">
+    <main
+      id="smooth-wrapper"
+      className="flex min-h-screen flex-col items-center justify-between p-24 bg-black"
+    >
+      <div
+        id="smooth-content"
+        className="flex min-h-screen flex-col items-center"
+      >
         <NavBar />
         <HeroSection data-speed="1.2" /> {/* Added data-speed attribute */}
         <AboutSection />

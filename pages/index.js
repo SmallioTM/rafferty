@@ -1,5 +1,5 @@
-import HeroSection from "../components/HeroSection";
-import NavBar from "../components/NavBar";
+import HeroSection from "../src/app/components/HeroSection/HeroSection";
+import NavBar from "../src/app/components/NavBar/NavBar";
 import "src/app/globals.css";
 
 export default function Page() {

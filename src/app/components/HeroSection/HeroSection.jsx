@@ -3,7 +3,7 @@ import "public/images/logo.png";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#222222] flex flex-col items-center p-[0] mt-[160px]">
+    <div className="h-[100vh] flex flex-col items-center p-[0] mt-[160px]">
       <h1 className="text-9xl font-polysans uppercase tracking-tighter leading-[90%]">
         Rafferty
       </h1>

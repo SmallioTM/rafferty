@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main
       id="smooth-wrapper"
-      className="flex min-h-screen flex-col items-center justify-between p-24 bg-black"
+      className="overflow-hidden flex min-h-screen flex-col items-center justify-between p-24 bg-black"
     >
       <div
         id="smooth-content"

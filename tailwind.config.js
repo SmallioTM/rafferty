@@ -18,7 +18,8 @@ module.exports = {
         white: "#ffffff",
         black: "#000000",
         grey: "#0F0F0F",
-        fontgrey: "C0C0C0",
+        fontgrey: "#C0C0C0",
+        l2: "#0F0F0F",
       },
       fontFamily: {
         polysans: ["PolySans Neutral", "sans-serif"],

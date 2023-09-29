@@ -18,6 +18,11 @@ module.exports = {
         white: "#ffffff",
         black: "#000000",
         grey: "#0F0F0F",
+        fontgrey: "C0C0C0",
+      },
+      fontFamily: {
+        polysans: ["PolySans Neutral", "sans-serif"],
+        fortescue: ["Fortescue Display", "serif"],
       },
     },
   },

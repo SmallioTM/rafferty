@@ -1,9 +1,23 @@
 @font-face {
-  font-family: "PolySans";
-  src: url("/fonts/PolySansNeutral.otf") format("opentype");
+  font-family: "PolySans Neutral";
+  src: url("PolySans-Neutral.woff2") format("woff2"),
+    url("PolySans-Neutral.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Fortesque";
-  src: url("/fonts/FortescueDisplay-Italic.otf") format("opentype");
+  font-family: "Fortescue Display";
+  src: url("FortescueDisplay-Italic.woff2") format("woff2"),
+    url("FortescueDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Define font variables */
+:root {
+  --font-poly: "PolySans Neutral", sans-serif;
+  --font-fort: "Fortescue Display", serif;
 }

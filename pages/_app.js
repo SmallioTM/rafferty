@@ -1,3 +1,5 @@
+"use client";
+
 // pages/_app.js
 import React, { useEffect } from "react";
 import "../src/app/globals.css";

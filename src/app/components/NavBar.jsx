@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 import "public/logo.png";
 
 const NavBar = () => {
@@ -8,10 +8,10 @@ const NavBar = () => {
         <img className="w-[120px] h-[30] flex" src="/logo.png" />
       </div>
       <div className="w-[320px] h-16 flex justify-between items-center px-5">
-        <a href="#" className="text-white">
+        <a href="/page" className="text-white">
           Home
         </a>
-        <a href="#" className="text-white">
+        <a href="/about" className="text-white">
           About
         </a>
         <a href="#" className="text-white">

@@ -11,4 +11,4 @@ export default function About() {
   );
 }
 
-// this is comitted
+// this is COMItteD

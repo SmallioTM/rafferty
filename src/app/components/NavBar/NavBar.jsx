@@ -1,11 +1,11 @@
 import Link from "next/link";
-import "public/logo.png";
+import "public/images/logo.png";
 
 const NavBar = () => {
   return (
-    <div className="fixed top-0 w-full h-16 bg-grey flex justify-between items-center pr-[40px] pl-[40px]">
+    <div className="fixed top-0 w-full h-[70px] bg-grey flex justify-between items-center pr-[40px] pl-[40px]">
       <div className="w-[150px] h-8 flex flex items-center justify-start">
-        <img className="w-[120px] h-[30] flex" src="/logo.png" />
+        <img className="w-[120px] h-[30] flex" src="public/images/logo.png" />
       </div>
       <div className="w-[320px] h-16 flex justify-between items-center px-5">
         <Link href="/" className="text-white">
@@ -14,7 +14,6 @@ const NavBar = () => {
         <Link href="/about" className="text-white">
           About
         </Link>
-        {/* If you have routes for "Work" and "Contact", you can add Link components for them as well */}
         <Link href="#" className="text-white">
           Work
         </Link>

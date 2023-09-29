@@ -5,18 +5,29 @@ import Lenis from "@studio-freight/lenis";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // Ensure we're running on the client side
-    if (typeof window !== "undefined") {
-      const lenis = new Lenis({
-        wrapper: document.querySelector(".l-wrapper"),
-        content: document.querySelector(".l-content"),
-        lerp: 0.1,
-        orientation: "vertical",
-      });
+    const lenis = new Lenis({
+      wrapper: document.querySelector(".l-wrapper"),
+      content: document.querySelector(".l-content"),
+      lerp: 0.03,
+      orientation: "vertical",
+    });
 
-      // Optional: Make Lenis instance globally available
-      window.lenisInstance = lenis;
+    if (lenis) lenis.scrollTo(0, { immediate: true });
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
 
   return <Component {...pageProps} />;

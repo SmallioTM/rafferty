@@ -1,9 +1,10 @@
 const React = require("react");
 const gsap = require("gsap").gsap;
 const ScrollTrigger = require("gsap").ScrollTrigger;
+const ScrollSmoother = require("gsap").ScrollSmoother;
 
-// Register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+// Register the ScrollTrigger and ScrollSmoother plugins
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function MyApp({ Component, pageProps }) {
   const boxRef = React.useRef(null);

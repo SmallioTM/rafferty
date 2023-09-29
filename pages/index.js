@@ -10,7 +10,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
       <div className="flex min-h-screen flex-col items-center">
         <NavBar />
-        <HeroSection />
+        <HeroSection data-speed="1.2" /> {/* Added data-speed attribute */}
         <AboutSection />
       </div>
     </main>

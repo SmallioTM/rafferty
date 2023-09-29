@@ -1,6 +1,7 @@
+import "src/app/globals.css";
+
 import HeroSectionv2 from "../src/app/components/HeroSection/HeroSectionv2";
 import NavBar from "src/app/components/NavBar/NavBar.jsx";
-import "src/app/globals.css";
 
 export default function About() {
   return (

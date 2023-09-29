@@ -1,7 +1,8 @@
+import "src/app/globals.css";
+
 import React from "react";
 import HeroSection from "../src/app/components/HeroSection/HeroSection";
 import NavBar from "../src/app/components/NavBar/NavBar";
-import "src/app/globals.css";
 import AboutSection from "@/app/components/AboutSection/AboutSection";
 
 export default function Page() {

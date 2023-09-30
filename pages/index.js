@@ -4,6 +4,7 @@ import React from "react";
 import HeroSection from "../src/app/components/HeroSection/HeroSection";
 import NavBar from "../src/app/components/NavBar/NavBar";
 import AboutSection from "@/app/components/AboutSection/AboutSection";
+import LargeProjectSection from "src/app/components/LargeProjectSection/LargeProjectSection.jsx";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
         <NavBar />
         <HeroSection data-speed="1.2" /> {/* Added data-speed attribute */}
         <AboutSection />
+        <LargeProjectSection />
       </div>
     </main>
   );

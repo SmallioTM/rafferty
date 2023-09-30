@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 const NavBar = () => {
   return (
     <div className="fixed top-0 w-full h-[70px] bg-grey flex justify-between items-center pr-[40px] pl-[40px]">
-      <div className="w-[150px] h-8 flex flex items-center justify-start">
+      <div className="w-[150px] h-8 flex items-center justify-start">
         <img className="w-[120px] h-[30] flex" src="/images/logo.png" />
       </div>
       <div className="w-[320px] h-16 flex justify-between items-center px-5">
@@ -21,7 +21,12 @@ const NavBar = () => {
           Contact
         </Link>
       </div>
-      <div className="w-[150px] h-8 bg-white"></div>
+      <button
+        id="button"
+        className="text-[#000000] text-[13px] w-[150px] h-8 rounded-md bg-white"
+      >
+        CONTACT
+      </button>
     </div>
   );
 };
